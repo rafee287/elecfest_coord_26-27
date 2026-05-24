@@ -26,7 +26,7 @@ byte start[8] = {
 };
 
 
-byte north[8] = {
+byte arr1[8] = {
   B00000000,
   B00011000,
   B00111100,
@@ -38,7 +38,7 @@ byte north[8] = {
 };
 
 
-byte south[8] = {
+byte arr2[8] = {
   B00000000,
   B00011000,
   B00011000,
@@ -48,32 +48,6 @@ byte south[8] = {
   B00011000,
   B00000000
 };
-
-
-byte west[8] = {
-  B00000000,
-  B00011000,
-  B00011000,
-  B00011000,
-  B01111110,
-  B00111100,
-  B00011000,
-  B00000000
-};
-
-
-byte east[8] = {
-  B00000000,
-  B00011000,
-  B00111100,
-  B01111110,
-  B00011000,
-  B00011000,
-  B00011000,
-  B00000000
-};
-
-
 
 void setup() {
   matrix.begin();              // Initialize the matrix
@@ -96,25 +70,25 @@ void loop() {
 
   if (y > 3796){
     for (int col = 0; col < 8; col++) {
-      matrix.setColumn(0, (8+col-shift)%8, east[col]);
+      matrix.setColumn(0, (8+col-shift)%8, arr1[col]);
     }
     Serial.println("east");
   }
   else if (x > 3796){
     for (int row = 0; row < 8; row++) {
-      matrix.setRow(0, (8+row-shift)%8, north[row]);
+      matrix.setRow(0, (8+row-shift)%8, arr1[row]);
     }
     Serial.println("north");
   }
   else if (y < 300){
     for (int col = 0; col < 8; col++) {
-      matrix.setColumn(0, (col+shift)%8, west[col]);
+      matrix.setColumn(0, (col+shift)%8, arr2[col]);
     }
     Serial.println("west");
   }
   else if (x < 300){
     for (int row = 0; row < 8; row++) {
-      matrix.setRow(0, (row+shift)%8, south[row]);
+      matrix.setRow(0, (row+shift)%8, arr2[row]);
     }
     Serial.println("south");
   }
