@@ -26,6 +26,7 @@
   * Booting up the software and initial Q&A.
 * **10:00 - 11:30 | Schematic Capture**
   * Step-by-step creation of the circuit schematic by participants.
+  * Introduction to net labels
 * **11:30 - 12:00 | Morning Wrap-up**
   * Open doubt session and buffer/grace time.
 
