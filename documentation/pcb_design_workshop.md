@@ -32,13 +32,15 @@
 * **12:00 - 14:00 | Lunch Break**
 
 ### Session 2: Layout, Routing & Manufacturing
-* **14:00 - 15:45 | PCB Layout & Routing**
+* **14:00 - 14:45 | Signal Integrity & Electromagnetics**
+  * Understanding EMI, crosstalk, signal reflections, and ground bounce.
+  * How physics directly influences physical board layouts.
+
+* **14:45 - 16:30 | PCB Layout & Routing**
   * Component placement strategy.
   * Routing tracks, managing layer stacks, and applying best practices.
   * Troubleshooting layout and routing issues.
-* **15:45 - 16:30 | Signal Integrity & Electromagnetics**
-  * Understanding EMI, crosstalk, signal reflections, and ground bounce.
-  * How physics directly influences physical board layouts.
+
 * **16:30 - 17:00 | Manufacturing, Cost Optimization and Closing QnA**
   * Generating Gerber files and Bill of Materials (BOM).
   * How to order from manufacturers (linking back to sponsors).
